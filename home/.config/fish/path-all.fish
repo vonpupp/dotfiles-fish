@@ -28,7 +28,7 @@ test -f ~/.cookiecutters/cookiecutter-conf.yaml; and set -x COOKIECUTTER_CONFIG 
 test -d ~/repos/crypto/beancount_cryptocompare/beancount_cryptocompare; and set -x PYTHONPATH ~/repos/crypto/beancount_cryptocompare/beancount_cryptocompare $PYTHONPATH
 
 # NODE
-test -f /usr/bin/npm; and set -x PATH (npm bin) $PATH
+test -f /usr/bin/npm; and test -d (npm bin); and set -x PATH (npm bin) $PATH
 
 # R
 test -d ~/Rlibs; and set -x R_LIBS ~/Rlibs
