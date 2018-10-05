@@ -4,5 +4,6 @@ function fish_greeting
 	end
 
 	echo ---
-	echo Pacman available updates (pacman -Qqu | wc -l)
+    ~/bin/archlinux-available-updates-autorun.sh
+	# echo Pacman available updates (pacman -Qqu | wc -l)
 end

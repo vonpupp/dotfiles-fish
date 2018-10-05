@@ -26,6 +26,7 @@ abbr -a shutdown sudo shutdown
 
 # Misc abbreviations
 abbr -a du du -hs
+abbr -a bc bc -l
 
 # alias llsize='l --group-directories-first -S'
 # alias pbcopy='xsel --clipboard --input'
