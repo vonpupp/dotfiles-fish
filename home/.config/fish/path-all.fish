@@ -43,3 +43,6 @@ set -x XDG_CONFIG_HOME ~/.config
 
 # GPG
 set -x GPG_TTY (tty)
+
+# ASDF
+test -f /opt/asdf-vm/asdf.fish; and source /opt/asdf-vm/asdf.fish
