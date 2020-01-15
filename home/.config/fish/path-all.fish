@@ -38,6 +38,14 @@ test -d ~/Rlibs; and set -x PATH $R_LIBS $PATH
 test -d ~/.rbenv/versions/2.5.0/bin; and set PATH ~/.rbenv/versions/2.3.0/bin $PATH
 test -d ~/.gem/ruby/2.5.0/bin; and set PATH ~/.gem/ruby/2.5.0/bin $PATH
 
+# Flutter
+test -d /opt/flutter; and set PATH /opt/flutter $PATH
+test -d /opt/android-sdk; and set ANDROID_SDK_ROOT /opt/android-sdk
+test -d /opt/android-sdk; set PATH $ANDROID_SDK_ROOT $PATH
+test -d /opt/android-sdk; set PATH $ANDROID_HOME/tools $PATH
+test -d /opt/android-sdk; set PATH $ANDROID_HOME/tools/bin $PATH
+test -d /opt/android-sdk; set PATH $ANDROID_HOME/platform-tools $PATH
+
 # XDG
 set -x XDG_CONFIG_HOME ~/.config
 
