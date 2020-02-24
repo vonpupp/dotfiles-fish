@@ -42,8 +42,19 @@ test -d ~/.gem/ruby/2.5.0/bin; and set PATH ~/.gem/ruby/2.5.0/bin $PATH
 set GOPATH ~/go
 test -d ~/go/bin; and set PATH ~/go/bin $PATH
 
+# Flutter
+test -d /opt/flutter; and set PATH /opt/flutter $PATH
+test -d /opt/android-sdk; and set ANDROID_SDK_ROOT /opt/android-sdk
+test -d /opt/android-sdk; set PATH $ANDROID_SDK_ROOT $PATH
+test -d /opt/android-sdk; set PATH $ANDROID_HOME/tools $PATH
+test -d /opt/android-sdk; set PATH $ANDROID_HOME/tools/bin $PATH
+test -d /opt/android-sdk; set PATH $ANDROID_HOME/platform-tools $PATH
+
 # XDG
 set -x XDG_CONFIG_HOME ~/.config
 
 # GPG
 set -x GPG_TTY (tty)
+
+# ASDF
+test -f /opt/asdf-vm/asdf.fish; and source /opt/asdf-vm/asdf.fish
