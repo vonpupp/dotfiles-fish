@@ -1,6 +1,6 @@
 # Shell
 abbr -a l 'ls -lh'
-abbr -a ll 'ls -alh'
+abbr -a ll 'ls -alhtr'
 abbr -a lls 'ls -alhSr'
 abbr -a lt 'ls -alhtr'
 abbr -a psg 'ps aux | ag --smart-case'
@@ -52,7 +52,6 @@ abbr -a pt 'ping google.com'
 #
 # Load/reload
 # abbr -a homeshickload source ~/.homesick/repos/homeshick/homeshick.sh
-alias homeshicklink="~/bin/homeshick-link-bb.sh"
 alias xresourcesload="xrdb ~/.Xresources"
 
 # # Node
