@@ -38,6 +38,10 @@ test -d ~/Rlibs; and set -x PATH $R_LIBS $PATH
 test -d ~/.rbenv/versions/2.5.0/bin; and set PATH ~/.rbenv/versions/2.3.0/bin $PATH
 test -d ~/.gem/ruby/2.5.0/bin; and set PATH ~/.gem/ruby/2.5.0/bin $PATH
 
+# Go
+set GOPATH ~/go
+test -d ~/go/bin; and set PATH ~/go/bin $PATH
+
 # XDG
 set -x XDG_CONFIG_HOME ~/.config
 
