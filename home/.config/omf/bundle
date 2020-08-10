@@ -1,6 +1,6 @@
-package cd
 package fasd
-package z
 package foreign-env
+package fzf
 package local-config
+package z
 theme default
