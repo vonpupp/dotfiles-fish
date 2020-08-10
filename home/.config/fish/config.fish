@@ -20,3 +20,22 @@ end
 for file in ~/.config/fish/path-*.fish
     . $file
 end
+
+if test "$TERM" = "dumb"
+    function fish_title; end
+end
+
+# emacs ansi-term support
+if test -n "$EMACS"
+  set -x TERM eterm-color
+end
+
+# this function may be required
+function fish_title
+  true
+end
+
+# Theme
+set -g theme_display_user ssh
+set -g theme_display_hostname ssh
+set -g theme_display_date yes

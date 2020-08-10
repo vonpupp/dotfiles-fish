@@ -9,6 +9,7 @@ abbr -a ff 'find . | ag --smart-case'
 abbr -a fd 'find . -type d | ag --smart-case'
 abbr -a fc 'rg --line-number --no-heading --color=always --ignore-case --hidden'
 abbr -a du 'du -hs'
+abbr -a rsync 'rsync -av --partial --append-verify --inplace'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
@@ -63,3 +64,6 @@ alias xresourcesload="xrdb ~/.Xresources"
 # GPG
 alias gpg="gpg2"
 alias gpg-decrypt="gpg --passphrase-fd 0 --decrypt-files $ARGV"
+
+# Kill
+#alias kill-zombies='kill -HUP $(ps -A -ostat,ppid | grep -e "[zZ]"| awk "{ print $2 }")'
